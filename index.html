@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="output.css"> -->
     <link rel="stylesheet" href="custom.css">
     <title>Admin Dashboard</title>
 </head>
@@ -30,28 +30,75 @@
     -->
     <main>
         <nav>
-            <div class="nav-title">
+            <div class="nav-title flex-align">
+                <span class="material-icons">dashboard</span>
                 <h2>Dashboard</h2>
             </div>
             <ul class="nav-links1">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
+                <li class="x-align">
+                    <span class="material-icons">home</span>
+                    <a href="#">Home</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        account_box
+                    </span>
+                    <a href="#">Profile</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        mode_comment
+                    </span>
+                    <a href="#">Messages</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        watch_later
+                    </span>
+                    <a href="#">History</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        task
+                    </span>
+                    <a href="#">Tasks</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        groups
+                    </span>
+                    <a href="#">Communities</a>
+                </li>
             </ul>
             <ul class="nav-links2">
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        settings
+                    </span>
+                    <a href="#">Settings</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        help_center
+                    </span>
+                    <a href="#">Support</a>
+                </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        verified_user
+                    </span>
+                    <a href="#">Privacy</a>
+                </li>
             </ul>
         </nav>
 
         <header>
             <div class="header-top">
-                <div class="search-input">
-                    icon + input
+                <div class="search-input x-align">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="search">
                 </div>
                 <div class="top-left-icons">
                     <p>icon + pfp + name</p>

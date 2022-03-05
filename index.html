@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <!-- <link rel="stylesheet" href="output.css"> -->
     <link rel="stylesheet" href="custom.css">
     <title>Admin Dashboard</title>
@@ -30,9 +30,9 @@
     -->
     <main>
         <nav>
-            <div class="nav-title flex-align">
+            <div class="nav-title x-align">
                 <span class="material-icons">dashboard</span>
-                <h2>Dashboard</h2>
+                <h1>Dashboard</h1>
             </div>
             <ul class="nav-links1">
                 <li class="x-align">
@@ -89,6 +89,12 @@
                     </span>
                     <a href="#">Privacy</a>
                 </li>
+                <li class="x-align">
+                    <span class="material-icons">
+                        cruelty_free
+                    </span>
+                    <a href="https://kuromicon.tumblr.com/">Kuromicon</a>
+                </li>
             </ul>
         </nav>
 
@@ -100,16 +106,29 @@
                     </span>
                     <input type="search">
                 </div>
-                <div class="top-left-icons">
-                    <p>icon + pfp + name</p>
+                <div class="top-left-icons xy-align">
+                    <span class="material-icons-outlined">
+                        notifications_active
+                    </span>
+                    <div class="profile-img profile-img-small"></div>
+                    <span class="profile-name">Morgan Oakley</span>
                 </div>
             </div>
             </div>
 
             <div class="header-bottom">
-                <div class="welcome">
-                    <p>pfp + name</p>
+
+                <div class="greeting">
+
+                    <div class="profile-img profile-img-large"></div>
+
+                    <div class="greeting-text">
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley (@morgan)</h2>
+                    </div>
+
                 </div>
+
                 <div class="header-buttons">
                     <button>New</button>
                     <button>Upload</button>
@@ -118,10 +137,22 @@
             </div>
         </header>
 
-        <div id="main-content">main-content</div>
+        <div id="main-content">
+            <div class="card">
+                <span class="material-icons-outlined">
+                    grade
+                </span>
+                <span class="material-icons-outlined">
+                    visibility
+                </span>
+                <span class="material-icons-outlined">
+                    share
+                </span>
+            </div>
+        </div>
+
+
     </main>
-
-
 </body>
 
 </html>

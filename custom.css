@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 :root {
     --nav-bg: #4199e1;
+    --main-content-bg: #e7e7e7;
 }
 
 html {
@@ -9,7 +11,16 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.1rem;
 }
 
 ul {
@@ -21,14 +32,13 @@ a {
 }
 
 main {
-    background-color: red;
+    height: 100vh;
     display: grid;
-    gap: 5px;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
-.flex-align {
+.xy-align {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,18 +88,62 @@ header {
     grid-template-rows: repeat(2, 1fr);
 }
 
+/* #top# */
+
 .header-top {
     border: 1px solid violet;
     grid-area: 1 / 1 / 2 / span 2;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 1em;
 }
+
+input {
+    width: 80%;
+    padding: 0.25em;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--main-content-bg);
+}
+
+.top-left-icons {
+    gap: 1em;
+}
+
+.profile-img {
+    border: none;
+    border-radius: 50%;
+    background-image: url(./img/hello-kitty-icon01.jpg);
+    background-size: contain;
+}
+
+.profile-img-small {
+    height: 40px;
+    width: 40px;
+}
+
+.profile-img-large {
+    height: 60px;
+    width: 60px;
+    grid-area: 1 / 1 / span 2 / 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.profile-name {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+/* #bottom# */
 
 .header-bottom {
     border: 1px solid violet;
     grid-area: 2 / 1 / 3 / span 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-top > *,
@@ -97,9 +151,22 @@ header {
     border: 1px solid orange;
 }
 
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-weight: 600;
+    padding: 0 1em;
+}
+
+.greeting-text {
+    font-size: .75rem;
+    padding: 0;
+    margin: 0;
+}
+
 /* MAIN CONTENT */
 
 #main-content {
     border: 2px solid limegreen;
-    background-color: lightgray;
+    background-color: var(--main-content-bg);
 }

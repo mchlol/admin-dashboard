@@ -7,11 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
+    <style>
+        main {
+            background-color: red;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 100px 1fr;
+        }
+
+        nav {
+            border: 2px solid pink;
+            background-color: royalblue;
+            grid-area: 1 / 1 / span 2 / auto;
+        }
+
+        header {
+            border: 2px solid violet;
+            background-color: white;
+        }
+
+        #main-content {
+            border: 2px solid limegreen;
+            background-color: lightgray;
+        }
+    </style>
 </head>
 
 <body>
 
-    <button class="btn w-64 rounded-full">Button</button>
+    <!--
+        Nav
+            logo
+            links1
+            links2
+        Header
+            searchbar + icons
+            welcome + buttons
+        Content
+            projects
+                cards
+            sidebar
+                announcements
+                trending
+    -->
+    <main>
+        <nav>nav</nav>
+        <header>header</header>
+        <div id="main-content">main-content</div>
+    </main>
+
 
 </body>
 

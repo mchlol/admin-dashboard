@@ -220,14 +220,14 @@ button {
 
 .projects-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .card {
     border-radius: 5px;
     background-color: #fff;
     margin: 0.5em;
-    padding: 0.5em;
+    padding: 1em;
     box-shadow: 0px 2px 8px var(--dark-grey);
     font-size: 0.75rem;
 }
@@ -247,33 +247,51 @@ button {
 .card-icons {
     text-align: end;
     padding-bottom: .5em;
+    font-size: 0.25rem;
 }
 
 /* SIDEBAR */
 
+.sidebar-card {
+    padding: 1em;
+}
+
 /* announcements */
 
 .announcements-card {
-    padding: 0 1em;
+    margin-top: 1.5em;
+    height: max-content;
 }
 
 /* trending */
 
+.trending {
+    margin: 0.5em;
+}
+
 .trending-content {
+    margin: 0 auto;
+    padding: 1em auto;
     display: grid;
+    row-gap: 10px;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(4, 1fr);
-}
-
-.trending-content > div {
-    padding: 1em;
-}
-
-.announcements-content.sidebar-card {
-    padding: 1em;
 }
 
 .sidebar-card span {
     display: block;
     padding: 0.5em;
+}
+
+.trending-name > span {
+    padding: 0.25em;
+}
+
+.username {
+    font-weight: 600;
+}
+
+.material-icons-outlined { 
+    font-size: 18px; 
+    font-weight: 400;
 }

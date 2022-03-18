@@ -1,5 +1,7 @@
 # admin-dashboard
 
+[Live site](https://mchlol.github.io/admin-dashboard/)
+
 ## Assignment
 This project is part of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css/lessons/admin-dashboard) full-stack JavaScript course Intermediate HTML & CSS section.
 
